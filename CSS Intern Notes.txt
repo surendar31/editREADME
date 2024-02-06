@@ -1,0 +1,177 @@
+CSS Intern - surendar R
+
+<html>
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+------------------------------------------
+CSS Color
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+---------------------------------------------------------------
+Color 
+<html>
+<head>
+<style>
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+</style>
+</head>
+---------------------------------------------------
+Border CSS
+<head>
+<style>
+dotted {border-style: dotted;}
+dashed {border-style: dashed;}
+solid {border-style: solid;}
+double {border-style: double;}
+</style>
+</head>
+--------------------------------------------
+margin
+<head>
+<style>
+ p {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;}
+----------------------------------------------
+Padding Equal space left and right and text in center:
+div {
+  border: 1px solid black;
+  padding: 25px 50px;
+  background-color: lightblue;
+}
+--------------------------------------------
+Positioning
+<html>
+<head>
+<style>
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+-----------------------------------------------------
+html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+--------------------------------------------
+scroll down and overflow
+<head>
+<style>
+div {
+  background-color: coral;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+</style>
+</head>
+_-----------------------------------------------------
+
+<style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+
+<div class="center">
+  <p>Hello World!</p>
+</div>
+--------------------------------------------------------------
+ visited link,unvisited,hover,
+
+<head>
+<style>
+ unvisited link 
+a:link {
+  color: red;
+}
+
+ visited link 
+a:visited {
+  color: green;
+}
+
+ mouse over link 
+a:hover {
+  color: hotpink;
+}
+
+selected link 
+a:active {
+  color: blue;
+}
+</style>
+</head>
+---------------------------------------------------
+transparency 
+
+img {
+  opacity: 0.5;
+}
+---------------------------------------------------
+mouse over images and transparency
+
+img:hover {
+  opacity: 1.0;
+}
+-----------------------------------------
+target used to highlight speicify link wih Bg
+<head>
+<style>
+a[target="_blank"] {
+  background-color: yellow;
+}
+</style>
+</head>
+-----------------------------------
