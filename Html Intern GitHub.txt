@@ -1,0 +1,92 @@
+HTML INTERN SURENDAR-R
+introduction:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+------------------------
+Heading and Paragraph:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+--------------------------------------
+link For HTML
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+should be written bby <a href=" " ></a>
+------------------------------------------------------------
+style="property:value;">
+--------------------------------------
+HTML background_color
+<body style="background-color:powderblue;">
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+-----------------------------------------------
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+-----------------------------------------------
+window openings
+_self -the same window/tab as it was clicked
+_blank - in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body 
+---------------------------------------------
+Images and text
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+source = images downloaded
+alt=text if the image is not opened 
+--------------------------------------
+Icon on title page
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+-------------------------------------------------
+tables-=td,tr,th
+table cell is defined by a <td> and a </td> tag.
+td stands for table data.
+Everything between <td> and </td>
+<tr> table row</tr>
+<th> table header</th>
+---------------------------------------------------
+unorder list
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+------------------------------------------------
+order list
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+-------------------------------------------------
+The class attribute is often used to point to a class name in a style sheet
+------------------------------------------------------------
+The id attribute specifies a unique id for an HTML element. 
+----------------------------------------------------------------------
+website opening on screen(tablets,phone,pc)
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+--------------------------------------------------------
+< (less than) = &lt;
+> (greather than) = &gt;
+=--------------------------------------------------
+
+
+
