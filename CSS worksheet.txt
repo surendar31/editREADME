@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+</style>
+</head>
+--------------------------------------------------------------------------------------------------
+<h1>The border-image Property</h1>
+
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 round;</p>
+
+<p>Here is the original image:</p><img src="border.png">
+#borderimg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+----------------------------------------------------
+<html>
+<head>
+<style> 
+#example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
+---------------------------------------------------------------
+Transparent
+<html>
+<head>
+<style>
+#p1 {background-color:hsla(120,100%,50%,0.3);}
+#p2 {background-color:hsla(120,100%,75%,0.3);}
+#p3 {background-color:hsla(120,100%,25%,0.3);}
+#p4 {background-color:hsla(120,60%,70%,0.3);}
+#p5 {background-color:hsla(290,100%,50%,0.3);}
+#p6 {background-color:hsla(290,60%,70%,0.3);}
+</style>
+</head>
+<body>
+
+<h1>Define Colors With HSLA Values</h1>
+
+<p id="p1">Green</p>
+<p id="p2">Light green</p>
+<p id="p3">Dark green</p>
+<p id="p4">Pastel green</p>
+<p id="p5">Violet</p>
+<p id="p6">Pastel violet</p>
+
+</body>
+</html>
+-------------------------------------------------------------------------------
+BORDER
+<html>
+<head>
+<style>
+div {
+  color: blue;
+  border: 10px solid currentcolor;
+  padding: 15px;  
+}
+</style>
+</head>
+<body>
+
+<h2>The currentcolor Keyword</h2>
+
+<p>The currentcolor keyword refers to the current value of the color property of an element.</p>
+
+<div>
+This div element has a blue text color and a blue border.
+</div>
+---------------------------------------------------------------------------------------------------
+SHADOW
+<html>
+<head>
+<style>
+h1 {
+  text-shadow: 2px 2px;
+}
+</style>
+</head>
+<body>
+
+<h1>Text-shadow effect!</h1>
+
+</body>
+</html>
+--------------------------------------------------------------
+Transition and animations
+
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div></div>
+
+</body>
+</html>
+-------------------------------------------------------------------------
+Buttons
+<html>
+<head>
+<style>
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Buttons</h2>
+
+<button>Default Button</button>
+<a href="#" class="button">Link Button</a>
+<button class="button">Button</button>
+<input type="button" class="button" value="Input Button">
+
+</body>
+</html>
+-----------------------------------------------------------------------------------
+
