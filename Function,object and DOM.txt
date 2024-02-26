@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+
+function myFunction(a, b) {
+  return a * b;
+}
+</script>
+
+</body>
+</html>
+----------------------------------------------------------------------------
+<h1>JavaScript Functions</h1>
+<h2>Default Parameter Values</h2>
+<p>If y is not passed or undefined, then y = 10:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y = 10) {
+  return x + y;
+}
+document.getElementById("demo").innerHTML = myFunction(5);
+</script>
+
+------------------------------------------------------
+<h1>JavaScript Functions</h1>
+<h2>Default Parameter Values</h2>
+<p>If y is not passed or undefined, then y = 10:</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(x, y = 10) {
+  return x + y;
+}
+document.getElementById("demo").innerHTML = myFunction(5);
+</script>
+
+---------------------------------------------------------------------------
+<p id="demo"></p>
+
+<script>
+const myObject = {
+  firstName:"John",
+  lastName: "Doe",
+  fullName: function() {
+    return this;
+  }
+}
+document.getElementById("demo").innerHTML = myObject.fullName();
+</script>
+-----------------------------------------------------------------------------------
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1, ["Oslo", "Norway"]); 
+</script>
+-------------------------------------------------------------------------------
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName:"John",
+  lastName: "Doe",
+  display: function() {
+    let x = document.getElementById("demo");
+    x.innerHTML = this.firstName + " " + this.lastName;
+  }
+}
+
+person.display();
+</script>
+---------------------------------------------------------
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const myCar1 = new Car("Ford", 2014);
+const myCar2 = new Car("Audi", 2019);
+
+document.getElementById("demo").innerHTML =
+myCar1.name + " " + myCar2.name;
+</script>
+--------------------------------------------------------------------------------
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+--------------------------------------------------------
+changing html by script
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+-------------------------------------
+Date
+<script>
+document.write(Date());
+</script>
+--------------------------------------
+Change css with js
+<p id="p2">Hello World!</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
+---------------------------------------------------------
+Animationjs
+<div id="animation">My animation will go here</div>
+--------------------------------------------------------------------
+onclick attrb
+<h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+-------------------------------------------
+Onclick 
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+-------------------------------------------------------------------------------------
+<p id="demo"></p>
+
+<script>
+function checkCookies() {
+  let text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+------------------------------------------------------------
+#nav
+<h1 id="id01">My First Page</h1>
+<p id="id02"></p>
+
+<script>
+document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+</script>
+---------------------------------------------------------------
+div id="div1">
+  <p id="p1">This is a paragraph.</p>
+  <p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+const para = document.createElement("p");
+const node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+const element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+--------------------------------------------------------------------------
+Removve
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<h3>Remove an HTML Element.</h3>
+
+<div>
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<button onclick="myFunction()">Remove Element</button>
+
+<script>
+function myFunction() {
+document.getElementById("p1").remove();
+}
+</script>
+
+</body>
+</html>
+------------------------------------------------
+<p id="demo"></p>
+
+<script>
+const myCollection = document.getElementsByTagName("p");
+
+document.getElementById("demo").innerHTML = "This document contains " + myCollection.length + " paragraphs.";
+
+-----------------------------------------------------------------------
+alert
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("I am an alert box!");
+}
+</script>
+-------------------------------------------------------------
+<button onclick="setTimeout(myFunction, 3000);">Try it</button>
+
+<script>
+function myFunction() {
+  alert('Hello');
+}
+</script>
+------------------------------------------------------------------------------------
+----------------------------------------------------------------
+----------------------------------------------------------------
