@@ -1,0 +1,81 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+function Hello(props) {
+  return <h1>Hello World!</h1>;
+}
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Hello />);
+----------------------------------------------------
+<p id="demo"></p>
+  
+<script>
+hello = () => {
+  return "Hello World!";
+}
+
+document.getElementById("demo").innerHTML = hello();
+</script>
+----------------------------------------------------
+Components:;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Car() {
+  return <h2>Hi, I am a Car!</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
+-------------------------------------
+pros:
+function Car(props) {
+  return <h2>I am a {props.color} Car!</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car color="red"/>);
+-----------------------------------------------
+function Car() {
+  return <h2>I am a Car!</h2>;
+}
+
+function Garage() {
+  return (
+    <>
+	 <h1>Who lives in my Garage?</h1>
+	 <Car />
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Garage />)
+-----------------------------------------------------------------
+Class::
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+class Car extends React.Component {
+  render() {
+    return <h2>Hi, I am a Car!</h2>;
+  }
+}
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(<Car />);
+----------------------------------------------------------
+props::
+
+function Car(props) {
+  return <h2>I am a { props.brand }!</h2>;
+}
+
+const myElement = <Car brand="Ford" />;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+--------------------------------------------------------------------
